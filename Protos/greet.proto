@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC_qlsinhvien";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting -gui loi chao 
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// The request message containing the user's name.- thong bao yeu cau chua ten ng dung 
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.-tin nhan phan hoi co loi chao 
+message HelloReply {
+  string message = 1;
+}
